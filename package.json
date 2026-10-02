@@ -1,0 +1,29 @@
+{
+  "name": "ash-language",
+  "displayName": "Ash",
+  "description": "Syntax highlighting for the Ash programming language",
+  "version": "0.0.3",
+  "publisher": "lennoxrose",
+  "icon": "icon.png",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/The-Ash-Team/ash-syntax"
+  },
+  "engines": { "vscode": "^1.60.0" },
+  "categories": ["Programming Languages"],
+  "keywords": ["ash", "syntax", "highlighting"],
+  "contributes": {
+    "languages": [{
+      "id": "ash",
+      "aliases": ["Ash", "ash"],
+      "extensions": [".ash"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "ash",
+      "scopeName": "source.ash",
+      "path": "./syntaxes/ash.tmLanguage.json"
+    }]
+  }
+}
