@@ -2,7 +2,7 @@
   "name": "ash-language",
   "displayName": "Ash",
   "description": "Syntax highlighting for the Ash programming language",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "publisher": "lennoxrose",
   "icon": "icon.png",
   "license": "MIT",

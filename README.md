@@ -2,23 +2,26 @@
 
 Syntax highlighting for [Ash](https://github.com/lennoxrose/ash), a
 small programming language with closures, hash maps, first-class functions,
-and `try`/`catch`, built from scratch in C.
+and `attempt`/`handle`, built from scratch in C.
 
 ## Features
 
 - Full syntax highlighting for `.ash` files: keywords, strings, numbers,
-  function names, operators, comments
-- Bracket matching and auto-closing pairs
+  function names, builtins, operators, comments, `@import` paths
+- Bracket matching and auto-closing pairs for `{}`, `()`, and `[]`
 
 ## Example
 
 ```ash
-fn make_adder(x) {
-    return fn(y) { return x + y; };
+forge clamp(value, min, max) {
+    given value < min {
+        yield min;
+    }
+    yield value;
 }
 
-let add5 = make_adder(5);
-print add5(3); // 8
+local zone = zones[0];
+say "zone: " + zone["name"];
 ```
 
 ## More
